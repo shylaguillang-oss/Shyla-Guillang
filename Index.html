@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <title>SDIHS School Profile</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* HEADER */
+        header {
+            background-color:pink;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav.topnav {
+            background-color: lavender;
+            overflow: hidden;
+        }
+
+        nav.topnav a {
+            float: left;
+            padding: 14px 20px;
+            color: white;
+            text-decoration: none;
+        }
+
+        nav.topnav a:hover {
+            background-color: lavender 
+        }
+
+        /* CONTAINER */
+        .container {
+            display: flex;
+        }
+
+        /* SIDEBAR */
+        .sidebar {
+            width: 20%;
+            background-color: skyblue;
+            padding: 20px;
+            height: 410px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .sidebar li {
+            margin-bottom: 10px;
+            cursor: pointer;
+            padding: 5px;
+        }
+
+        .sidebar li:hover {
+            background-color: powderblue;
+        }
+
+        /* ARTICLE */
+        article {
+            padding: 30px;
+            width: 70%;
+            background-color: powderblue; 
+            height: 390px;
+        } 
+
+
+        /* FOOTER */
+        footer {
+            background-color: lavender;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: px;
+        }
+    </style>
+</head>
+
+<body> 
+  
+    <header>
+      <h1>SDIHS</h1>
+      <p>Barangay Santo Domingo,Santa Rosa City, Laguna<p>
+</header>
+
+
+   
+
+    <!-- TOP MENU -->
+    <nav class="topnav">
+        <a href="http://127.0.0.1:26541/main/0/storage/emulated/0/Page%201.html">Home</a>
+        <a href="http://127.0.0.1:26541/main/0/storage/emulated/0/Page2.html">First Quarter</a>
+        <a href="http://127.0.0.1:26541/main/0/storage/emulated/0/Page3.html">Second Quarter</a> 
+<a 
+href="https://www.facebook.com/shyla.guillang?mibextid=ZbWKwL">about</a>
+    </nav>
+
+<div class="container">
+        <!-- SIDEBAR -->
+        <nav class="sidebar">
+            <ul>
+                <li onclick="showProfile()">School Profile</li>
+                <li onclick="showSHS()">SHS</li>
+                <li onclick="showJHS()">JHS</li>
+            </ul>
+        </nav>
+
+        <!-- ARTICLE -->
+        <article id="content">
+            <h1>School Profile</h1>
+            <p>Santo Domingo Integrated High School founded in 1971.</p>
+            <p>It is located at Barangay Santo Domingo, City of Santa Rosa, Laguna.</p>
+        </article>
+    </div>
+
+    <footer>
+        <p> shylaguillang@gmail.com |09516344732  </p>
+        <p> Grade-10 Makiling </p>
+    </footer>
+
+    <!-- JAVASCRIPT  -->
+    <script>
+        function showProfile() {
+            document.getElementById("content").innerHTML = `
+                <h1>School Profile</h1>
+                <h3>Vision</h3>
+                <p>We dream of Filipinos
+‎who passionately love their country and whose values and competencies enable them to realize
+‎their full potential and contribute meaningfully to building the nation. As a learner-
+‎centered public institution, the Department of Education continuously improves itself to
+‎ better serve its stakeholders.</p> 
+<h3>Mission</h3>
+<p> 
+‎To protect and promote the right of every Filipino to quality, equitable, culture-based, and complete basic education where: Students learn in a child-friendly, gender-sensitive, safe, and motivating enviroment.</p>`;}
+
+        function showSHS() {
+            document.getElementById("content").innerHTML = `
+                <h1>Senior High School (SHS)</h1>
+                <p>SDIHS offers SHS strands such as HUMSS, GAS, STEM, and ABM.</p>
+                <p>SHS prepares students for college, employment, or entrepreneurship.</p>
+            `;
+        }
+
+        function showJHS() {
+            document.getElementById("content").innerHTML = `
+                <h1>Junior High School (JHS)</h1>
+                <h3>Makiling</h3>
+                <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F18qlE4ubuAwTCyqFG9ZqhpCyyzh62vBh8&h=AT0lSFmO-ea7iV1WX2KmN0Sr7f-UEpTcGZVyvmzPsaGdgtTUxkbBgmQQ1ulmDYZsvXT4l7a1NGCaBmDWLciWJgk70OcW0M1OndhfkqKPOknGQPBNkd10snN1orq2btM&s=1">Guillang, Athena Shyla<br>
+Blas, Katherene<br>Lacatan, Maria Kyla Merced<br>Agustin, Frecious Ann<br>Montilla, Sophia Abegeil</a>
+            `;
+        }
+    </script>
+
+</body>
+</html>
